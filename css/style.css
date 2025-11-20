@@ -1,0 +1,35 @@
+#container {
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: 
+    'hd hd as'
+    'sc sc as'
+    'ft ft nv';
+}
+
+.rubrik{
+    color:#3498db;
+}
+
+
+aside {
+    grid-area: as;
+    background-color: darkorange;
+
+}
+
+header {
+    grid-area: hd;
+    background-color: blueviolet;
+
+}
+
+nav {
+    grid-area: nv;
+    background-color: lightblue;
+
+}
+
+section {
+    grid-area: sc;
+    background-color: black;
+}
