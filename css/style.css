@@ -1,35 +1,48 @@
 #container {
-    grid-template-columns: 20% 60% 20%;
-    grid-template-areas: 
-    'hd hd as'
-    'sc sc as'
-    'ft ft nv';
+    grid-template-columns: 60% 70% 60%;
+    grid-template-rows: 20vh 30vh 20vh;
+    grid-template-areas:
+        'hd hd as'
+        'sc sc as'
+        'ft ft nv';
+    margin: 0px;
+    display: grid;
 }
 
-.rubrik{
-    color:#3498db;
+body {
+    background-color: blueviolet;
+    display: flex;
+    width: 100%;
+}
+
+.rubrik {
+    color: #3498db;
 }
 
 
 aside {
     grid-area: as;
-    background-color: darkorange;
-
+    background-color: brown;
 }
+
 
 header {
     grid-area: hd;
     background-color: blueviolet;
-
 }
+
 
 nav {
     grid-area: nv;
     background-color: lightblue;
-
 }
 
 section {
     grid-area: sc;
     background-color: black;
+}
+
+footer{
+    grid-area: ft;
+    background-color: chartreuse;
 }
