@@ -7,14 +7,15 @@
     row-gap: 5px;
     box-shadow: inset;
     grid-template-areas:
-        'hd hd as'
+        'hd hd nv'
         'sc sc as'
-        'ft ft nv';
+        'sc sc as'
+        'ft ft ft';
 }
 
 a {
-color: #3498db;
-font-weight: bold;
+    color: #3498db;
+    font-weight: bold;
 }
 
 
@@ -28,7 +29,7 @@ body {
     min-height: 100vh;
     background-attachment: scroll;
     background-position: center;
-  }
+}
 
 header {
     grid-area: hd;
@@ -41,7 +42,7 @@ nav {
     grid-area: nv;
     gap: 20px;
     justify-content: center;
-    background-color: rgba(192, 0, 0, 0.438);
+    background-color: red;
     border-radius: 15px;
 }
 
@@ -54,7 +55,7 @@ section {
 
 aside {
     grid-area: as;
-    background-color: red;
+    background-color: #3498db;
     background-image: url(/img/Vampyrer\ Image\ 16\ okt.\ 2025\ 13_36_40.png);
     background-size: cover;
     background-position: center;
@@ -65,7 +66,7 @@ aside {
 footer {
     grid-area: ft;
     border-radius: 15px;
-    background-color: fuchsia;
+    background-color: black;
     text-align: center;
 }
 
@@ -74,6 +75,14 @@ h1 {
     color: #ffa500;
 }
 
+p {
+    color: white;
+}
+
 h2 {
     color: white;
+}
+
+li {
+    color: antiquewhite;
 }
