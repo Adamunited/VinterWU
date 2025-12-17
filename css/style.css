@@ -13,8 +13,25 @@
         'ft ft ft';
 }
 
-#container2 {
-    
+#container2{
+    display: grid;
+    margin: 0px;
+    min-height: 120vh;
+    grid-template-columns: 20% 60% 20%;
+    column-gap: 2px;
+    row-gap: 2px;
+    box-shadow: inset;
+    grid-template-areas:
+        'hd hd nv'
+        'sc sc as'
+        'ft ft ft';
+        background-color: #3498db;
+
+        
+}
+
+.section {
+    display: flex;
 }
 
 .datorbild {
@@ -27,6 +44,11 @@
 a {
     color: yellow;
     font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -68,7 +90,7 @@ section {
 aside {
     grid-area: as;
     background-color: #3498db;
-    background-image: url(/img/Vampyrer\ Image\ 16\ okt.\ 2025\ 13_36_40.png);
+    background-image: url(/img/datorbild.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -88,12 +110,9 @@ h1 {
 p {
     color: white;
     text-align: center;
-}
+    font-family:'Times New Roman', Times, serif
+}   
 
 h2 {
     color: white;
-}
-
-li {
-    color: antiquewhite;
 }
