@@ -13,23 +13,6 @@
         'ft ft ft';
 }
 
-#container2{
-    display: grid;
-    margin: 0px;
-    min-height: 120vh;
-    grid-template-columns: 20% 60% 20%;
-    column-gap: 2px;
-    row-gap: 2px;
-    box-shadow: inset;
-    grid-template-areas:
-        'hd hd nv'
-        'sc sc as'
-        'ft ft ft';
-        background-color: #3498db;
-
-        
-}
-
 .section {
     display: flex;
 }
@@ -71,6 +54,7 @@ body {
 header {
     grid-area: hd;
     background-color: black;
+    padding: 40px, 30px;
 }
 
 nav {
@@ -85,6 +69,7 @@ section {
     grid-area: sc;
     background-color: #3498db;
     color: black;
+    padding: 40px;
 }
 
 aside {
@@ -110,9 +95,92 @@ h1 {
 p {
     color: white;
     text-align: center;
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
+    padding: 10px 0;
+    margin-bottom: 15px;
 }   
 
 h2 {
     color: white;
+}
+
+
+#container2{
+    display: grid;
+    margin: 0px;
+    min-height: 120vh;
+    grid-template-columns: 20% 60% 20%;
+    column-gap: 2px;
+    row-gap: 2px;
+    box-shadow: inset;
+    grid-template-areas:
+        'hd hd nv'
+        'sc sc as'
+        'ft ft ft';
+        background-color: #3498db;
+}
+
+
+.product-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+
+.product-card{
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+}
+
+.product-name {
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.product-desc {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.product-pris {
+    color: #ffa500;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.product-knapp {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    width: 100%;
+}
+
+.product-knapp:hover {
+    background-color: #ff8c00;
 }
