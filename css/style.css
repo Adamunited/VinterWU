@@ -25,7 +25,7 @@
 }
 
 a {
-    color: yellow;
+    color: black;
     font-weight: bold;
     text-decoration: none;
 }
@@ -49,20 +49,32 @@ body {
     min-height: 100vh;
     background-attachment: scroll;
     background-position: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
     grid-area: hd;
+    text-align: center;
     background-color: black;
     padding: 40px, 30px;
 }
 
 nav {
     display: flex;
+    flex-direction: column;
     grid-area: nv;
-    gap: 20px;
-    justify-content: center;
+    gap: 8px;
+    justify-content: flex-start;
     background-color: #3498db;
+    padding: 10px;
+}
+
+nav a {
+    background-color: orange;
+    padding: 10px 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 section {
@@ -72,13 +84,72 @@ section {
     padding: 40px;
 }
 
+.section-title {
+    font-size: 28px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    color: #2e2e2e;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
 aside {
     grid-area: as;
-    background-color: #3498db;
-    background-image: url(/img/datorbild.jpg);
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffa500;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 20px;
 }
 
 footer {
@@ -103,7 +174,6 @@ h2 {
     color: white;
 }
 
-
 #container2 {
     display: grid;
     margin: 0px;
@@ -118,7 +188,6 @@ h2 {
         'ft ft ft';
     background-color: #3498db;
 }
-
 
 .product-grid {
     display: grid;
@@ -188,4 +257,15 @@ h2 {
 
 .product-knapp:hover {
     background-color: #ff8c00;
+    cursor: pointer;
+}
+
+.small-image .product-image img{
+    width: 110%;
+    height: 110%;
+}
+
+.smaller-image .product-image img{
+    width: 130%;
+    height: 130%;
 }
