@@ -18,10 +18,10 @@
 }
 
 .datorbild {
-    height: 200px;
-    display: block;
+    height: 150px;
+    width: 150px;
     align-content: center;
-    margin: auto;
+    margin-bottom: 20px;
 }
 
 a {
@@ -97,7 +97,6 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: all 0.3s ease;
 }
 
 .feature-card:hover {
@@ -143,7 +142,7 @@ aside {
 .cta-button {
     display: inline-block;
     background-color: #ffa500;
-    color: white;
+    color: black;
     padding: 15px 30px;
     border-radius: 8px;
     text-decoration: none;
@@ -268,4 +267,81 @@ h2 {
 .smaller-image .product-image img{
     width: 130%;
     height: 130%;
+}
+
+.om-titel {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.om-text {
+    color: black;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.värden-rutnät {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.värde-kort {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.värde-ikon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.värde-kort h3 {
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.värde-kort p {
+    color: black;
+    font-size: 13px;
+}
+
+.kontakt-sektion {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.kontakt-sektion h3 {
+    color: #1a1a1a;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.kontakt-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.kontakt-item strong {
+    color: orange;
+    margin-bottom: 5px;
+}
+
+.kontakt-item p {
+    color: black;
+    font-size: 13px;
 }
