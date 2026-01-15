@@ -33,7 +33,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
 .line {
     border-bottom: 1px gray;
 }
@@ -50,7 +49,7 @@ header {
     grid-area: hd;
     text-align: center;
     background-color: black;
-    padding: 40px, 30px;
+    padding: 40px 30px;
 }
 
 nav {
@@ -154,7 +153,9 @@ h1 {
 }
 
 p {
-    color: white;
+    color: #F5F5DC;
+    font-size: 18px;
+    text-shadow: 0 0 1px #000000;
     font-family: 'Times New Roman', Times, serif;
     padding: 10px 0;
     margin-bottom: 15px;
